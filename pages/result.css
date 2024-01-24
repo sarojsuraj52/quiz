@@ -24,6 +24,7 @@ body {
   overflow: hidden; /* Hide overflow for fireflies */
   position: relative;
   z-index: 1;
+  margin: 0 20px;
 }
 
 /* Styling for the circular score display */
@@ -93,8 +94,24 @@ body {
 }
 
 /* Styling for the share button */
+.share-buttons{
+  display: flex;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .share-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .share-button{
+    width: 80%;
+  }
+}
 .share-button {
-  margin: 25px;
+  margin: 10px auto;
   display: inline-block;
   margin-right: 10px;
   color: #fff;
