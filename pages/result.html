@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- External stylesheet for styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="result.css" />
+    
+    <!-- Title of the HTML document -->
+    <title>Quiz Result</title>
+  </head>
+  <body>
+    <!-- Container for displaying quiz result -->
+    <div class="result-container">
+      <!-- Heading indicating quiz completion -->
+      <h1>Quiz Completed!</h1>
+      
+      <!-- Circular display for the final score -->
+      <div class="score-circle" id="final-score"></div>
+      
+      <!-- Dashboard displaying correct and incorrect answers -->
+      <div class="dashboard">
+        <div class="dashboard-item">
+          <!-- Icon and count for correct answers -->
+          <h2>
+            <i class="fa-solid fa-check" style="color: #22dd22"></i> Correct
+          </h2>
+          <p id="correct-count"></p>
+        </div>
+        <div class="dashboard-item">
+          <!-- Icon and count for incorrect answers -->
+          <h2>
+            <i class="fa-solid fa-xmark" style="color: #ff474c"></i> Incorrect
+          </h2>
+          <p id="incorrect-count"></p>
+        </div>
+      </div>
+      
+      <!-- Comment section providing additional feedback -->
+      <p class="comment" id="comment-text"></p>
+      
+      <!-- Button to play the quiz again -->
+      <button class="play-again-button" onclick="playAgain()">
+        <i class="fas fa-arrow-rotate-left"></i> Play Again
+      </button>
+      
+      <!-- Share buttons for social media -->
+      <div class="share-buttons">
+        <a class="share-button" href="#" onclick="shareOnFacebook()"
+          ><i class="fa-brands fa-facebook"> </i> Share on Facebook</a
+        >
+        <a class="share-button" href="#" onclick="tweetOnTwitter()"
+          ><i class="fa-brands fa-twitter"> </i> Tweet on Twitter</a
+        >
+      </div>
+    </div>
+
+    <!-- Script file for interactive functionality -->
+    <script src="result.js"></script>
+  </body>
+</html>
